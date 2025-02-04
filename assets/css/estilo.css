@@ -231,7 +231,7 @@ header h1 {
     padding-bottom: 30px;
 }
 
-.card {
+.cart {
     width: 300px;
     height: 200px;
     perspective: 1000px;
@@ -239,7 +239,7 @@ header h1 {
     font-weight: 400;
   }
   
-  .card-inner {
+  .cart-inner {
     width: 100%;
     height: 100%;
     position: relative;
@@ -247,19 +247,19 @@ header h1 {
     transition: transform 0.999s;
   }
   
-  .card:hover .card-inner {
+  .cart:hover .cart-inner {
     transform: rotateY(180deg);
   }
   
-  .card-front,
-  .card-back {
+  .cart-front,
+  .cart-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
   }
   
-  .card-front {
+  .cart-front {
     background-color: var(--pink-legal);
     color: #fff;
     display: flex;
@@ -271,7 +271,7 @@ header h1 {
     transform: rotateY(0deg);
   }
   
-  .card-back {
+  .cart-back {
     background-color: var(--background4);
     color: #fff;
     display: flex;
@@ -283,6 +283,63 @@ header h1 {
     transform: rotateY(180deg);
   }
 
+.cart-text {
+    font-family: "Poppins", serif;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.cart-back2 {
+  background-color: var(--background2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid var(--background2);
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+.cart-front2,
+.cart-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cart2 {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+
+.cart-inner2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.cart2:hover .cart-inner2 {
+  transform: rotateY(180deg);
+}
+
+.cart-front2 {
+  background-color: var(--pink-legal);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid var(--pink-legal);
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
 /* SEÇÃO DE SERVIÇOS */
 .servicos {
     background: var(--background4);
@@ -1111,6 +1168,12 @@ header h1 {
     padding-bottom: 80px;
 }
 
+.projetos-interativos label {
+  font-family: "Lexend", serif;
+  gap: 20px;
+  padding-right: 10px;
+}
+
 .tit-projei {
     color: var(--pink-legal);
     font-family: "Poppins", serif;
@@ -1139,6 +1202,88 @@ header h1 {
     font-size: 30px;
     padding-top: 60px;
     padding-bottom: 30px;
+}
+
+.calcs-tit {
+    font-family: "Poppins", serif;
+    color: var(--pink-legal);
+    text-align: center;
+    font-size: 20px;
+}
+
+.calcs-text {
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: center;
+    font-family: "Roboto", serif;
+    line-height: 27px;
+    font-size: 16px;
+}
+
+.calc-soma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.calc-mult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lista-merc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lista-tit {
+  font-family: "Poppins", serif;
+  color: var(--pink-legal);
+  text-align: center;
+  font-size: 20px;
+}
+
+.lista-text {
+  padding-left: 120px;
+  padding-right: 120px;
+  text-align: center;
+  font-family: "Roboto", serif;
+  line-height: 27px;
+  font-size: 16px;
+}
+
+.input-pi {
+  background-color: var(--background2);
+  max-width: 190px;
+  height: 20px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: "Lexend", serif;
+}
+
+.input-pi:focus {
+  color: var(--pink-legal);
+  background-color: var(--background2);
+  outline-color: var(--pink-legal);
+  box-shadow: -3px -3px 15px var(--pink-legal);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+
+.result {
+  font-family: "Poppins", serif;
+  color: var(--background3);
+  text-align: center;
+  font-size: 15px;
 }
 
 /* REDES SOCIAIS */
@@ -1228,15 +1373,45 @@ header h1 {
 
    
   /* FEEDBACK - FORMULÁRIO */
-form, p {
+
+
+.tit-feed {
+    color: var(--pink-legal);
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+.feed-text {
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    color: white;
+}
+
+.feedback {
+  background-color: var(--background3);
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+
+.formul, .text-formul {
     padding: 0;
     margin: 0;
     outline: none;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Poppins", serif;
     font-size: 14px;
-    color: #000;
+    color: white;
     line-height: 13px;
     border-radius: 10px;
+    padding-top: 10px;
   }
   
   #h1 {
@@ -1247,7 +1422,7 @@ form, p {
   
   #h4 {
     margin: 20px 0 2px;
-    color: #000;
+    color: white;
   }
   
   .testbox {
@@ -1258,25 +1433,25 @@ form, p {
     padding: 80px;
   }
   
-  form {
+  .formul {
     width: 100%;
     padding: 20px;
-    background: #EBEBE1;
-    box-shadow: 0 2px 5px #ccc;
+    background: var(--pink-legal);
+    box-shadow: 0 2px 5px var(--background3);
   }
   
-  .input {
+  .input-formul {
     width: calc(100% - 10px);
     padding: 5px;
-    border: 1px solid #000;
+    border: 1px solid white;
     border-radius: 3px;
     vertical-align: middle;
     background-color: #F7F7F7;
   }
   
-  .input:hover, textarea:hover {
+  .input-formul:hover, textarea:hover {
     outline: none;
-    border: 1px solid #000;
+    border: 1px solid var(--background3);
   }
   
   .first-name {
@@ -1321,7 +1496,7 @@ form, p {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background-color: #F3D153;
+    background-color: white;
     font-size: 16px;
     color: #000;
     cursor: pointer;
@@ -1336,3 +1511,58 @@ form, p {
       word-break: keep-all;
     }
   }
+  
+  /* SEÇÃO DE CONTATO */
+  .tit-cont {
+    color: var(--pink-legal);
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.cont-text {
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    color: var(--background3);
+    padding-bottom: 20px;
+}
+
+.contato {
+  background-color: var(--background4);
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+
+/* RODAPÉ */
+footer {
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: var(--background3);
+}
+
+.logo {
+    text-align: center;
+    font-family: "Lexend", serif;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.rodape-text {
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-size: 15px;
+  padding-top: 10px;
+  color: var(--background4);
+}
